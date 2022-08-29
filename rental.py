@@ -31,15 +31,12 @@ class Property():
             total_investment = down_payment + closing_cost + rehab_budget
             annual_profit = 390.00 * 12.00
             cashoncash = annual_profit / total_investment
-            print(cashoncash)
-            print("Your Property is bringing you in a ROI of 9.38%")
+            rate = "{:.09%}".format(cashoncash)
+            print(f"Your Property is bringing you in a ROI of {rate} anually.")
     
-    
+  
 my_property = Property()
 my_property.total()
-my_property.deductions()
-my_property.cash()
-my_property.roi()
 
         
 
